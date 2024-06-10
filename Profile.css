@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Section 1 Styles */
+#section1 {
+    height: 3.5cm;
+    width: 100%;
+    background-color: #E6B31E;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.btn {
+    margin-top: 0.15cm;
+    margin-left: auto;
+    cursor: pointer;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+}
+
+.arrow {
+    margin-left: 1cm;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Navbar2 Styles */
+.navbar2 {
+    background-color: black;
+    color: white;
+    height: 14.5cm;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+}
+
+.profilePercent {
+    padding: 2cm 0 0 0.8cm;
+    font-size: 0.5cm;
+    margin-right: 1rem;
+}
+
+.straightLine {
+    height: 0.2cm;
+    width: 20cm;
+}
+
+/* Coupon Section Styles */
+.couponSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2cm;
+}
+
+.couponInput {
+    height: 1cm;
+    width: 5.5cm;
+    margin-right: 0.5cm;
+    padding: 0 0.2cm;
+    font-size: 0.4cm;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.couponButton {
+    height: 1cm;
+    width: 2cm;
+    font-size: 0.4cm;
+    cursor: pointer;
+    background-color: #E6B31E;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+}
+
+/* Terms and Conditions Styles */
+.termsConditions {
+    margin-top: 2cm;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+#terms, #privacy {
+    padding: 20px;
+    border-radius: 2px;
+    font-size: large;
+}
+
+/* Deletion and Logout Buttons Styles */
+.deletion, .logingOut {
+    height: 1cm;
+    margin: 0.4cm 0 0 13.5cm;
+}
+
+.delete, .logout {
+    height: 1cm;
+    width: 8cm;
+    font-size: 0.45cm;
+    cursor: pointer;
+    background-color: #E6B31E;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    text-align: center;
+}
+
+.buttons1 {
+    display: block;
+}
+
+/* Profile Logo and Tick Styles */
+.profilelogo {
+    color: white;
+    padding-top: 3.4cm;
+    font-size: 1cm;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 3.5cm;
+}
+
+.tick {
+    color: white;
+    font-size: 0.4cm;
+    margin-left: 2cm;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .btn {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #section1 {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .arrow {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #section1 {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .arrow {
+        margin-left: 0;
+    }
+
+    .profilelogo {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .profilePercent {
+        padding: 1cm 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .straightLine {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .couponSection {
+        flex-direction: column;
+    }
+
+    .couponInput, .couponButton {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .termsConditions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #terms, #privacy {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .deletion, .logingOut {
+        margin: 0 auto;
+        background-color: black;
+        width: 90%;
+        text-align: center;
+    }
+
+    .delete, .logout {
+        width: 100%;
+    }
+}
